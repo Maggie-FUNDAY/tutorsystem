@@ -1,0 +1,142 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Search Class</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>查詢課程</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">Admins</li>
+            <li class="breadcrumb-item active">Search Class</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <div class="card col-12">
+          <div class="card-body">
+
+            <!-- Multi Columns Form -->
+            <form class="row g-3 pt-3">
+              <div class="col-6 col-sm-3 col-md-1">
+                <label for="inputYear" class="form-label">年</label>
+                  <select id="inputYear" class="form-select">
+                    <option selected>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                  </select>
+              </div>
+              <div class="col-6 col-sm-3 col-md-1">
+                <label for="inputMonth" class="form-label">月</label>
+                <select id="inputMonth" class="form-select">
+                  <option Value="1">一月</option>
+                  <option value="2">二月</option>
+                  <option selected value="3">三月</option>
+                  <option value="4">四月</option>
+                  <option value="5">五月</option>
+                  <option value="6">六月</option>
+                  <option value="7">七月</option>
+                  <option value="8">八月</option>
+                  <option value="9">九月</option>
+                  <option value="10">十月</option>
+                  <option value="11">十一月</option>
+                  <option value="12">十二月</option>
+                </select>
+              </div>
+              <div class="col-6 col-sm-3 col-md-1">
+                <label for="inputDate" class="form-label">日</label>
+                <select id="inputDate" class="form-select">
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-6 col-sm-3 col-md-2">
+                <label for="inputTeacher" class="form-label">授課教師</label>
+                <select id="inputTeacher" class="form-select">
+                  <option>Yao</option>
+                  <option>CJ</option>
+                  <option>Ruby</option>
+                  <option>Jimmy</option>
+                  <option>Tom</option>
+                  <option>Maggie</option>
+                  <option>Brian</option>
+                  <option>Cynthia</option>
+                </select>
+              </div>
+              <div class="col-6 col-sm-3 col-md-1">
+                <label for="inputLevel" class="form-label">課程等級</label>
+                <select id="inputLevel" class="form-select">
+                  <option>Pre-A1</option>
+                  <option>A1</option>
+                  <option>A2</option>
+                  <option>B1</option>
+                  <option>B2</option>
+                  <option>C1</option>
+                </select>
+              </div>
+              <div class="col-6 col-sm-3 col-md-1">
+                <label for="inputClassroom" class="form-label">教室類別</label>
+                <select id="inputClassroom" class="form-select">
+                  <option selected>FA</option>
+                  <option>TC</option>
+                  <option>BLC</option>
+                  <option>PC</option>
+                  <option>GR</option>
+                  <option>SOL</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-6 col-sm-3 col-md-1">
+                <label for="inputDifficulty" class="form-label">難易度</label>
+                <select id="inputDifficulty" class="form-select">
+                  <option>一顆星</option>
+                  <option>二顆星</option>
+                  <option>三顆星</option>
+                </select>
+              </div>
+              <div class="col-6 col-sm-3 col-md-1">
+                <label for="inputStatus" class="form-label">狀態</label>
+                <select id="inputStatus" class="form-select">
+                  <option>作廢</option>
+                  <option>已完課</option>
+                  <option>未授課</option>
+                  <option>代課</option>
+                  <option>空堂</option>
+                </select>
+              </div>
+              <div class="col-6 col-sm-3 col-md-2">
+                <label for="inputRecord" class="form-label">行政紀錄</label>
+                <select id="inputRecord" class="form-select">
+                  <option>遲開課</option>
+                  <option>未開課</option>
+                  <option>未完課</option>
+                  <option>遲評分</option>
+                  <option>遲上傳</option>
+                </select>
+              </div>
+              <div class="col-6 col-sm-3 col-md-1 mt-5">
+                <button type="submit" class="btn btn-primary">Search</button>
+              </div>
+            </form><!-- End Multi Columns Form -->
+
+          </div>
+        </div>
+
+      </section>
+
+
+{% endblock %}

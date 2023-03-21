@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Class List</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>Class List</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">FUNDAY Teachers</li>
+            <li class="breadcrumb-item active">Class List</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <div class="card col-12">
+          <div class="card-body">
+
+            <!-- Filter -->
+            <form class="row g-3 pt-3">
+              <div class="col-6 col-md-3 col-xl-2">
+                <label for="inputDate" class="form-label">Date</label>
+                <input id="inputDate" type="date" class="form-control">
+              </div>
+              <div class="col-6 col-md-3 col-xl-2">
+                <label for="inputStatus" class="form-label">Status</label>
+                <select id="inputStatus" class="form-select">
+                  <option></option>
+                  <option>Completed</option>
+                  <option>In Progress</option>
+                </select>
+              </div>
+              <div class="col-6 col-md-3 col-xl-2">
+                <label for="inputRecord" class="form-label">Filter</label>
+                <select id="inputRecord" class="form-select">
+                  <option></option>
+                  <option>Unscored</option>
+                  <option>Unuploaded</option>
+                  <option>No Show</option>
+                  <option>Late Show</option>
+                  <option>Lost Session</option>
+                  <option>Empty</option>
+                </select>
+              </div>
+              <div class="col-6 col-sm-3 col-md-1 mt-5">
+                <button type="submit" class="btn btn-primary">Search</button>
+              </div>
+            </form><!-- End Filter -->
+
+          </div>
+        </div>
+
+
+        <div class="col-12">
+          
+          <div class="card">
+            <div class="card-body">
+
+              <!-- Class List Table -->
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Class Log</th>
+                    <th scope="col">Class ID</th>
+                    <th scope="col">Level</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Student Count</th>
+                    <th scope="col">Message</th>
+                    <th scope="col">Student Evaluation</th>
+                    <th scope="col">Video Upload</th>
+                    <th scope="col">Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>2023/03/01<br>14:00-14:50</td>
+                    <td>2023/03/01<br>13:58:00</td>
+                    <td>E23000000</td>
+                    <td>A2</td>
+                    <td>FA</td>
+                    <td>3</td>
+                    <td><button class="btn btn-secondary">Send</button></td>
+                    <td><button class="btn btn-primary">Score</button></td>
+                    <td><button class="btn btn-success">Upload</button></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>2023/03/01<br>15:00-15:50</td>
+                    <td>2023/03/01<br>15:01:14</td>
+                    <td>E23000001</td>
+                    <td>A1</td>
+                    <td>FA</td>
+                    <td>0</td>
+                    <td><button class="btn btn-secondary disabled">X</button></td>
+                    <td><button class="btn btn-primary disabled">X</button></td>
+                    <td><button class="btn btn-success disabled">X</button></td>
+                    <td><span class="badge bg-warning"></span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>2023/03/01<br>16:00-16:50</td>
+                    <td>2023/03/01<br>16:02:01</td>
+                    <td>E23000002</td>
+                    <td>A1</td>
+                    <td>TC</td>
+                    <td>1</td>
+                    <td><button class="btn btn-secondary disabled">Sent</button></td>
+                    <td><button class="btn btn-primary disabled">Scored</button></td>
+                    <td><button class="btn btn-success disabled">Uploaded</button></td>
+                    <td><span class="badge bg-warning">Late Show</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>2023/03/02<br>15:00-15:50</td>
+                    <td><br></td>
+                    <td>E23000003</td>
+                    <td>A2</td>
+                    <td>TC</td>
+                    <td>X</td>
+                    <td><button class="btn btn-secondary disabled">X</button></td>
+                    <td><button class="btn btn-primary disabled">X</button></td>
+                    <td><button class="btn btn-success disabled">X</button></td>
+                    <td><span class="badge bg-danger">No Show</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>2023/03/02<br>17:00-17:50</td>
+                    <td>2023/03/02<br>16:57:30</td>
+                    <td>E23000004</td>
+                    <td>A1</td>
+                    <td>GR</td>
+                    <td>0</td>
+                    <td><button class="btn btn-secondary disabled">X</button></td>
+                    <td><button class="btn btn-primary disabled">X</button></td>
+                    <td><button class="btn btn-success disabled">X</button></td>
+                    <td><span class="badge bg-info">Lost Session</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- End Class List Table -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+{% endblock %}
