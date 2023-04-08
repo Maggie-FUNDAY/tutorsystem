@@ -1,0 +1,279 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Contact LCM</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+
+      <div class="pagetitle">
+        <h1>Contact LCM</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">Users</li>
+            <li class="breadcrumb-item active">Contact LCM</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+        
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Email to LCM</h5>
+            <h6 class="card-subtitle"><em>For urgent in-class technical issues, please report to the Technical Issues Report group on Synology.</em></h6>
+            <br>
+
+            <!-- Bordered Tabs -->
+            <ul class="nav nav-tabs" id="defaultTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="classRelated-tab" data-bs-toggle="tab" data-bs-target="#classRelated" type="button" role="tab" aria-controls="classRelated" aria-selected="true">Class Related</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="scheduleRelated-tab" data-bs-toggle="tab" data-bs-target="#scheduleRelated" type="button" role="tab" aria-controls="scheduleRelated" aria-selected="false">Schedule Related</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="salaryRelated-tab" data-bs-toggle="tab" data-bs-target="#salaryRelated" type="button" role="tab" aria-controls="salaryRelated" aria-selected="false">Salary Related</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="systemGlitch-tab" data-bs-toggle="tab" data-bs-target="#systemGlitch" type="button" role="tab" aria-controls="systemGlitch" aria-selected="false">System Glitch</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="others-tab" data-bs-toggle="tab" data-bs-target="#others" type="button" role="tab" aria-controls="others" aria-selected="false">Others</button>
+              </li>
+            </ul>
+
+              <!-- Class Related Tab-->
+              <div class="tab-content pt-3" id="defaultTab">
+                <div class="tab-pane fade show active" id="classRelated" role="tabpanel" aria-labelledby="classRelated">
+                  <div class="row mb-3">
+                    
+                    <label class="col-sm-3 col-form-label">Teacher Name</label>
+                    <label class="col-sm-9 col-form-label mb-3"><em>Maggie</em></label>
+
+                    <label class="col-sm-3 col-form-label">Teacher Email</label>
+                    <label class="col-sm-9 col-form-label mb-3"><em>maggie@fun-day.com.tw</em></label>
+
+                    <label class="col-sm-3 col-form-label">Class Date</label>
+                    <div class="form-floating col-sm-9 mb-3">
+                      <input type="date" class="form-control" id="classDate">
+                    </div>
+
+                    <label for="classTime" class="col-sm-3 col-form-label">Class Time</label>
+                    <div class="form-floating col-sm-9 mb-3">
+                      <input type="time" class="form-control" id="classTime">
+                    </div>
+
+                    <label class="col-sm-3 col-form-label">Class ID</label>
+                    <div class="col-sm-9">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="classID" placeholder="ID (starts with E)">
+                        <label for="classID">ID (starts with E)</label>
+                      </div>
+                    </div>
+
+                    <label class="col-sm-3 col-form-label">Class Title</label>
+                    <div class="col-sm-9">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="classTitle" placeholder="Title">
+                        <label for="classTitle">Title</label>
+                      </div>
+                    </div>
+
+                    <label class="col-sm-3 col-form-label">Student Name</label>
+                    <div class="col-sm-9">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="studentName" placeholder="name">
+                        <label for="studentName">Name</label>
+                      </div>
+                    </div>
+
+                    <label class="col-sm-3 col-form-label">Student Contact Number</label>
+                    <div class="col-sm-9">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="studentNumber" placeholder="Contact Number">
+                        <label for="studentNumber">Contact Number (09xxxxxxxx)</label>
+                      </div>
+                    </div>
+
+                    <label class="col-sm-3 col-form-label text-secondary">Student Name</label>
+                    <div class="col-sm-9">
+                      <div class="form-floating mb-3 text-secondary">
+                        <input type="text" class="form-control" id="studentName2" placeholder="(optional)">
+                        <label for="studentName2">(optional)</label>
+                      </div>
+                    </div>
+
+                    <label class="col-sm-3 col-form-label text-secondary">Student Contact Number</label>
+                    <div class="col-sm-9">
+                      <div class="form-floating mb-3 text-secondary">
+                        <input type="text" class="form-control" id="studentNumber2" placeholder="(optional)">
+                        <label for="studentNumber2">(optional)</label>
+                      </div>
+                    </div>
+
+                    <label class="col-sm-3 col-form-label text-secondary">Student Name</label>
+                    <div class="col-sm-9">
+                      <div class="form-floating mb-3 text-secondary">
+                        <input type="text" class="form-control" id="studentName3" placeholder="(optional)">
+                        <label for="studentName3">(optional)</label>
+                      </div>
+                    </div>
+
+                    <label class="col-sm-3 col-form-label text-secondary">Student Contact Number</label>
+                    <div class="col-sm-9">
+                      <div class="form-floating mb-3 text-secondary">
+                        <input type="text" class="form-control" id="studentNumber3" placeholder="(optional)">
+                        <label for="studentNumber3">(optional)</label>
+                      </div>
+                    </div>
+
+                    <label class="col-sm-3 col-form-label">Class Related Issue</label>
+                    <div class="col-sm-9">
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" id="description" style="height: 100px;" placeholder="Description"></textarea>
+                        <label for="description">Description</label>
+                      </div>
+                    </div>
+
+                    <label class="col-sm-3 col-form-label">Submit</label>
+                    <div class="col-sm-9">
+                      <button type="submit" class="btn btn-primary">Submit Form</button>
+                    </div>
+
+                  </div>
+                </div><!-- End Class Related Tab-->
+
+                <!-- Schedule Related Tab-->
+                <div class="tab-pane fade" id="scheduleRelated" role="tabpanel" aria-labelledby="scheduleRelated">
+                  <div class="row mb-3">
+                    
+                    <label class="col-sm-3 col-form-label">Teacher Name</label>
+                    <label class="col-sm-9 col-form-label mb-3"><em>Maggie</em></label>
+
+                    <label class="col-sm-3 col-form-label">Teacher Email</label>
+                    <label class="col-sm-9 col-form-label mb-3"><em>maggie@fun-day.com.tw</em></label>
+
+                    <label class="col-sm-3 col-form-label">Schedule Related Issue</label>
+                    <div class="col-sm-9">
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" id="description2" style="height: 200px;" placeholder="Description"></textarea>
+                        <label for="description2">Description</label>
+                      </div>
+                    </div>
+
+                    <label class="col-sm-3 col-form-label">Submit</label>
+                    <div class="col-sm-9">
+                      <button type="submit" class="btn btn-primary">Submit Form</button>
+                    </div>
+
+                  </div>
+                </div><!-- End Schedule Related Tab-->
+
+                <!-- Salary Related Tab-->
+                <div class="tab-pane fade" id="salaryRelated" role="tabpanel" aria-labelledby="salaryRelated">
+                  <div class="row mb-3">
+                    
+                    <label class="col-sm-3 col-form-label">Teacher Name</label>
+                    <label class="col-sm-9 col-form-label mb-3"><em>Maggie</em></label>
+
+                    <label class="col-sm-3 col-form-label">Teacher Email</label>
+                    <label class="col-sm-9 col-form-label mb-3"><em>maggie@fun-day.com.tw</em></label>
+
+                    <label class="col-sm-3 col-form-label">Salary Related Issue</label>
+                    <div class="col-sm-9">
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" id="description3" style="height: 200px;" placeholder="Description"></textarea>
+                        <label for="description3">Description</label>
+                      </div>
+                    </div>
+
+                    <label class="col-sm-3 col-form-label">File Upload</label>
+                    <div class="col-sm-9 mb-3">
+                      <input id="salaryFile" type="file" class="form-control">
+                    </div>
+
+                    <label class="col-sm-3 col-form-label">Submit</label>
+                    <div class="col-sm-9">
+                      <button type="submit" class="btn btn-primary">Submit Form</button>
+                    </div>
+
+                  </div>
+                </div><!-- End Salary Related Tab-->
+
+                <!-- System Glitch Tab-->
+                <div class="tab-pane fade" id="systemGlitch" role="tabpanel" aria-labelledby="systemGlitch">
+                  <div class="row mb-3">
+                    
+                    <label class="col-sm-3 col-form-label">Teacher Name</label>
+                    <label class="col-sm-9 col-form-label mb-3"><em>Maggie</em></label>
+
+                    <label class="col-sm-3 col-form-label">Teacher Email</label>
+                    <label class="col-sm-9 col-form-label mb-3"><em>maggie@fun-day.com.tw</em></label>
+
+                    <label class="col-sm-3 col-form-label">System Glitch</label>
+                    <div class="col-sm-9">
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" id="description4" style="height: 200px;" placeholder="Description"></textarea>
+                        <label for="description4">Description</label>
+                      </div>
+                    </div>
+
+                    <label class="col-sm-3 col-form-label">File Upload</label>
+                    <div class="col-sm-9 mb-3">
+                      <input id="systemFile" type="file" class="form-control">
+                    </div>
+
+                    <label class="col-sm-3 col-form-label">Submit</label>
+                    <div class="col-sm-9">
+                      <button type="submit" class="btn btn-primary">Submit Form</button>
+                    </div>
+
+                  </div>
+                </div><!-- End System Glitch Tab-->
+
+                <!-- Others Tab-->
+                <div class="tab-pane fade" id="others" role="tabpanel" aria-labelledby="others">
+                  <div class="row mb-3">
+                    
+                    <label class="col-sm-3 col-form-label">Teacher Name</label>
+                    <label class="col-sm-9 col-form-label mb-3"><em>Maggie</em></label>
+
+                    <label class="col-sm-3 col-form-label">Teacher Email</label>
+                    <label class="col-sm-9 col-form-label mb-3"><em>maggie@fun-day.com.tw</em></label>
+
+                    <label class="col-sm-3 col-form-label">Other Issues</label>
+                    <div class="col-sm-9">
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" id="description5" style="height: 200px;" placeholder="Description"></textarea>
+                        <label for="description5">Description</label>
+                      </div>
+                    </div>
+
+                    <label class="col-sm-3 col-form-label">File Upload</label>
+                    <div class="col-sm-9 mb-3">
+                      <input id="othersFile" type="file" class="form-control">
+                    </div>
+
+                    <label class="col-sm-3 col-form-label">Submit</label>
+                    <div class="col-sm-9">
+                      <button type="submit" class="btn btn-primary">Submit Form</button>
+                    </div>
+
+                  </div>
+                </div><!-- End Others Tab-->
+
+              </div>
+
+          </div>
+        </div>
+
+      </section>
+
+{% endblock %}

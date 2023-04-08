@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Evaluation</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>Teacher Performance Evaluation</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">FUNDAY Teachers</li>
+            <li class="breadcrumb-item active">Evaluation</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/TE_teacher_evaluation.aspx" target="_blank">紅網互評系統</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/TE_teacher_evaluation.aspx</em></small>
+        <hr>
+        <ul>
+          <li>分區塊：我評他人、他們評我</li>
+          <li>新增查詢過往紀錄之功能</li>
+        </ul>
+
+      </section>
+
+{% endblock %}

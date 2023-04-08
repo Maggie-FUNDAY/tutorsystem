@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - 通訊錄</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>通訊錄</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">Admins</li>
+            <li class="breadcrumb-item active">Directory</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/TE_teacher_list.aspx" target="_blank">紅網授課教師名單</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/TE_teacher_list.aspx</em></small>
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/teacherlist.aspx" target="_blank">紅網教學中心教師資料</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/teacherlist.aspx</em></small>
+        <h5><strong><a href="https://docs.google.com/spreadsheets/d/17oiVAB5F1D9edupP_p3AMLYAq2qN0oA5I_Ka-KeUdYQ/" target="_blank">通訊錄表格</a></strong></h5>
+        <small><em>https://docs.google.com/spreadsheets/d/17oiVAB5F1D9edupP_p3AMLYAq2qN0oA5I_Ka-KeUdYQ/</em></small>
+        <h5><strong><a href="https://docs.google.com/spreadsheets/d/1uPqjW7yzq8iheaXnwBoNh0MWtgW3eCflp1dak9W7Vvs/" target="_blank">新進老師到職進度追蹤表格</a></strong></h5>
+        <small><em>https://docs.google.com/spreadsheets/d/1uPqjW7yzq8iheaXnwBoNh0MWtgW3eCflp1dak9W7Vvs/</em></small>
+        <hr>
+        <ul>
+          <li>優化：整合紅網授課教師名單、紅網教學中心教師資料、通訊錄表格、新進老師到職進度追蹤表格、權限設定</li>
+        </ul>
+
+      </section>
+
+
+{% endblock %}

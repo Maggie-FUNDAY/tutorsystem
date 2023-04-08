@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Sub</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>Substitute For On-Leave Teachers</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item active">Sub</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/Tutor_leave_select.aspx" target="_blank">紅網代課列表</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/Tutor_leave_select.aspx</em></small>
+        <hr>
+        <ul>
+          <li>僅顯示最下端代課列表</li>
+          <li>改顯示英文課程類別與中英對照標題</li>
+          <li>新增取消申請代課功能</li>
+          <li>新增判斷教師現有課程時段之功能</li>
+          <li>新增判斷教師可代課課程之功能</li>
+        </ul>
+
+      </section>
+
+
+{% endblock %}

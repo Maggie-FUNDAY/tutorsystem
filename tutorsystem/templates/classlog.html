@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Class Log</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>開課後台</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">Admins</li>
+            <li class="breadcrumb-item active">Class Log</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/TE_open_class_search.aspx" target="_blank">紅網開課後台</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/TE_open_class_search.aspx</em></small>
+
+      </section>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Shared Materials</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>公版教材</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">Lead & Senior Teachers</li>
+            <li class="breadcrumb-item active">Shared Materials</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/TE_class_list_official.aspx" target="_blank">紅網公版教材</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/TE_class_list_official.aspx</em></small>
+        <hr>
+        <ul>
+          <li>優化：英文化</li>
+          <li>權限設定：授權者皆可新增、編輯、作廢指定公版教材區，不限一人</li>
+          <li>廢除個人可使用課程清單，一率使用公版教材區倒課</li>
+          <li>開課用檔案、預覽教材、授課用教材需全數上傳，老師們不再至Synology Drive下載</li>
+          <li>新增難易度</li>
+          <li>新增教材編號</li>
+        </ul>
+
+      </section>
+
+
+{% endblock %}

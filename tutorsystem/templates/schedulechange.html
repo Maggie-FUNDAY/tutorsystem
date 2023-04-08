@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Schedule Change</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>Schedule Change Request</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">FUNDAY Admins</li>
+            <li class="breadcrumb-item active">Schedule Change</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/Tutor_leave_select.aspx" target="_blank">紅網異動查詢</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/Tutor_leave_select.aspx</em></small>
+        <hr>
+        <ul>
+          <li>英文化</li>
+          <li>新增按鍵提交新的<a href="http://www.fun-day.com.tw/intranet/Tutor_leave_apply.aspx" target="_blank">異動申請</a></li>
+          <li>將「證明文件」欄位移至課程列表下方，同課程教材一併上傳</li>
+          <li>刪除非紅網提交的假別如特休、喪假、婚假等</li>
+        </ul>
+
+      </section>
+
+{% endblock %}

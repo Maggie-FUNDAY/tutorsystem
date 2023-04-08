@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Class Performance</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>開課績效</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">Admins</li>
+            <li class="breadcrumb-item active">Class Performance</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <h5><strong><a href="http://intranet.funday.asia/TE_class_performance.aspx" target="_blank">灰網開課績效</a></strong></h5>
+        <small><em>http://intranet.funday.asia/TE_class_performance.aspx</em></small>
+        <hr>
+        <ul>
+          <li>優化：重新梳理資料撈取邏輯</li>
+        </ul>
+
+      </section>
+
+
+{% endblock %}

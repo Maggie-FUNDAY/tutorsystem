@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Search Class</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>查詢課程</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">Admins</li>
+            <li class="breadcrumb-item active">Search Class</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <h5><strong><a href="http://intranet.funday.asia/TE_Tutor_class_VIP.aspx" target="_blank">灰網查詢官網課表</a></strong></h5>
+        <small><em>http://intranet.funday.asia/TE_Tutor_class_VIP.aspx</em></small>
+        <hr>
+        <ul>
+          <li>刪除查詢VIP</li>
+          <li>新增難易度篩選</li>
+          <li>課程狀態新增作廢</li>
+        </ul>
+
+      </section>
+
+
+{% endblock %}

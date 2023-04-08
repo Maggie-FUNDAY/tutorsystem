@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Workshop</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>研習營</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">Admins</li>
+            <li class="breadcrumb-item active">Workshop</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/WorkShop_addClass.aspx" target="_blank">紅網新增研習營課程</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/WorkShop_addClass.aspx</em></small>
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/WorkShop_search.aspx" target="_blank">紅網查詢研習營</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/WorkShop_search.aspx</em></small>
+        <h5><strong><a href="http://intranet.funday.asia/SSO_81.aspx?goto=Conference/list.asp" target="_blank">灰網81研習營</a></strong></h5>
+        <small><em>http://intranet.funday.asia/SSO_81.aspx?goto=Conference/list.asp</em></small>
+        <hr>
+        <ul>
+          <li>優化：整合紅網新增研習營課程、紅網查詢研習營、灰網81研習營、Logos各式表單</li>
+        </ul>
+
+      </section>
+
+{% endblock %}

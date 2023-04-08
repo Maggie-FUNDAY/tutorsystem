@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Message Board</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>教師留言板</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">Admins</li>
+            <li class="breadcrumb-item active">Message Board</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/TE_Tutor_Class_suggest_list.aspx" target="_blank">紅網教師留言板</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/TE_Tutor_Class_suggest_list.aspx</em></small>
+        <hr>
+        <ul>
+          <li>優化：送出或修改後不會跳出畫面</li>
+          <li>權限設定：外包教師不得使用</li>
+          <li>新增時限內可還原之功能</li>
+        </ul>
+
+      </section>
+
+
+{% endblock %}

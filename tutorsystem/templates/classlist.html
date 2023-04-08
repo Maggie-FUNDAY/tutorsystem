@@ -1,0 +1,240 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Class List</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>Class List</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">FUNDAY Teachers</li>
+            <li class="breadcrumb-item active">Class List</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <div class="card col-12">
+          <div class="card-body">
+
+            <!-- Class Filter -->
+            <form class="row g-3 pt-3">
+              <div class="col-6 col-md-2 col-xl-2">
+                <label for="inputStartDate" class="form-label">Start Date</label>
+                <input id="inputStartDate" type="date" class="form-control">
+              </div>
+              <div class="col-6 col-md-2 col-xl-2">
+                <label for="inputEndDate" class="form-label">End Date</label>
+                <input id="inputEndDate" type="date" class="form-control">
+              </div>
+              <div class="col-6 col-md-3 col-xl-2">
+                <label for="inputStatus" class="form-label">Status</label>
+                <select id="inputStatus" class="form-select">
+                  <option></option>
+                  <option>Completed</option>
+                  <option>In Progress</option>
+                </select>
+              </div>
+              <div class="col-6 col-md-3 col-xl-2">
+                <label for="inputFilter" class="form-label">Filter</label>
+                <select id="inputFilter" class="form-select">
+                  <option></option>
+                  <option>Unscored</option>
+                  <option>Upload Needed</option>
+                  <option>No Show</option>
+                  <option>Late Show</option>
+                  <option>Lost Session</option>
+                  <option>Empty</option>
+                </select>
+              </div>
+              <div class="col-6 col-sm-3 col-md-1 mt-5">
+                <button type="submit" class="btn btn-primary">Search</button>
+              </div>
+            </form><!-- End Filter -->
+
+          </div>
+        </div>
+
+
+        <div class="col-12">
+          
+          <div class="card">
+            <div class="card-body">
+
+              <!-- Class List Table -->
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Class Log</th>
+                    <th scope="col">Class ID</th>
+                    <th scope="col">Level</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Student Count</th>
+                    <th scope="col">Message</th>
+                    <th scope="col">Student Evaluation</th>
+                    <th scope="col">Video Upload</th>
+                    <th scope="col">Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>2023/03/01<br>14:00-14:50</td>
+                    <td>2023/03/01<br>13:58:00</td>
+                    <td>E23000000</td>
+                    <td>Class 1</td>
+                    <td>A2</td>
+                    <td>FA</td>
+                    <td>3<button type="button" class="btn btn-dark m-1" data-bs-toggle="modal" data-bs-target="#feedback">Feedback</button></td>
+                    <div class="modal fade" id="feedback" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Student Feedback</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body text-center"></div>
+                        </div>
+                      </div>
+                    </div><!-- End Feedback Modal-->
+                    <td><button button type="button" class="btn btn-secondary m-1" data-bs-toggle="modal" data-bs-target="#message">Edit</button></td>
+                    <div class="modal fade" id="message" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Message Board</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body text-center"></div>
+                        </div>
+                      </div>
+                    </div><!-- End Message Modal-->
+                    <td><button button type="button" class="btn btn-primary m-1" data-bs-toggle="modal" data-bs-target="#score">Score</button></td>
+                    <div class="modal fade" id="score" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Student Evaluation</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body text-center"></div>
+                        </div>
+                      </div>
+                    </div><!-- End Student Evaluation Modal-->
+                    <td><button button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#videoupload">Upload</button></td>
+                    <div class="modal fade" id="videoupload" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Video Upload</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body text-center"></div>
+                        </div>
+                      </div>
+                    </div><!-- End Video Upload Modal-->
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>2023/03/01<br>15:00-15:50</td>
+                    <td>2023/03/01<br>15:01:14</td>
+                    <td>E23000001</td>
+                    <td>Class 2</td>
+                    <td>A1</td>
+                    <td>FA</td>
+                    <td>0<button class="btn btn-dark disabled m-1">X</button></td>
+                    <td><button class="btn btn-secondary disabled m-1">X</button></td>
+                    <td><button class="btn btn-primary disabled m-1">X</button></td>
+                    <td><button class="btn btn-success disabled m-1">X</button></td>
+                    <td><span class="badge bg-warning m-1"></span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>2023/03/01<br>16:00-16:50</td>
+                    <td>2023/03/01<br>16:02:01</td>
+                    <td>E23000002</td>
+                    <td>Class 3</td>
+                    <td>A1</td>
+                    <td>TC</td>
+                    <td>1<button class="btn btn-dark disabled m-1">X</button></td>
+                    <td><button class="btn btn-secondary disabled m-1">Sent</button></td>
+                    <td><button class="btn btn-primary disabled m-1">Scored</button><button class="btn btn-primary m-1" data-bs-toggle="modal" data-bs-target="#editscore">Edit</button></td>
+                    <div class="modal fade" id="editscore" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Edit Score</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body text-center"></div>
+                        </div>
+                      </div>
+                    </div><!-- End Edit Score Modal-->
+                    <td><button class="btn btn-success disabled m-1">Uploaded</button><button button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#videoreupload">Reupload</button></td>
+                    <div class="modal fade" id="videoreupload" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Video Reupload</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body text-center"></div>
+                        </div>
+                      </div>
+                    </div><!-- End Video Reupload Modal-->
+                    <td><span class="badge bg-warning m-1">Late Show</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>2023/03/02<br>15:00-15:50</td>
+                    <td><br></td>
+                    <td>E23000003</td>
+                    <td>Class 4</td>
+                    <td>A2</td>
+                    <td>TC</td>
+                    <td>X<button class="btn btn-dark disabled m-1">X</button></td>
+                    <td><button class="btn btn-secondary disabled m-1">X</button></td>
+                    <td><button class="btn btn-primary disabled m-1">X</button></td>
+                    <td><button class="btn btn-success disabled m-1">X</button></td>
+                    <td><span class="badge bg-danger m-1">No Show</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>2023/03/02<br>17:00-17:50</td>
+                    <td>2023/03/02<br>16:57:30</td>
+                    <td>E23000004</td>
+                    <td>Class 5</td>
+                    <td>A1</td>
+                    <td>GR</td>
+                    <td>0<button class="btn btn-dark disabled m-1">X</button></td>
+                    <td><button class="btn btn-secondary disabled m-1">X</button></td>
+                    <td><button class="btn btn-primary disabled m-1">X</button></td>
+                    <td><button class="btn btn-success disabled m-1">X</button></td>
+                    <td><span class="badge bg-info m-1">Lost Session</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- End Class List Table -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+{% endblock %}

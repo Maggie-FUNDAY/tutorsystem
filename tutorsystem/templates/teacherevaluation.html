@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Teacher Evaluation</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>教師評鑑</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">Admins</li>
+            <li class="breadcrumb-item active">Teacher Evaluation</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/TE_teacher_evaluation_inquire.aspx" target="_blank">紅網互評分組表</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/TE_teacher_evaluation_inquire.aspx</em></small>
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/TE_monthly_evaluation_template.aspx" target="_blank">紅網評鑑項目建檔</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/TE_monthly_evaluation_template.aspx</em></small>
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/TE_monthly_evaluation_grouping.aspx" target="_blank">紅網評鑑分組</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/TE_monthly_evaluation_grouping.aspx</em></small>
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/TE_monthly_evalution_record.aspx" target="_blank">紅網評鑑給分</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/TE_monthly_evalution_record.aspx</em></small>
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/TE_monthly_evalution_result.aspx" target="_blank">紅網評鑑結果</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/TE_monthly_evalution_result.aspx</em></small>
+        <hr>
+        <ul>
+          <li>優化：整合互評分組表、評鑑項目建檔、評鑑分組、評鑑給分、評鑑結果</li>
+        </ul>
+
+      </section>
+
+
+{% endblock %}

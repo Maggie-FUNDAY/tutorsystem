@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Reply</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>Reply to Student Requests of Opening Additional Classes</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item active">Reply</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <h5><strong><a href="http://www.fun-day.com.tw/intranet/TE_Tutor_Class_ApplyList.aspx" target="_blank">紅網申請加開列表</a></strong></h5>
+        <small><em>http://www.fun-day.com.tw/intranet/TE_Tutor_Class_ApplyList.aspx</em></small>
+        <hr>
+        <ul>
+          <li>改顯示英文課程類別</li>
+          <li>新增判斷教師現有課程時段之功能</li>
+          <li>選擇不加開則顯示「無法加開」</li>
+          <li>新增可加開時限 (一個月?)</li>
+        </ul>
+
+      </section>
+
+
+{% endblock %}

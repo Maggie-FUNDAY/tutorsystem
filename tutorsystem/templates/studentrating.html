@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Ratings from Students</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>學生給評</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">Admins</li>
+            <li class="breadcrumb-item active">Ratings from Students</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <h5><strong><a href="http://intranet.funday.asia/TE_Tutor_class_comment202206.aspx" target="_blank">灰網查詢學生給評</a></strong></h5>
+        <small><em>http://intranet.funday.asia/TE_Tutor_class_comment202206.aspx</em></small>
+        <hr>
+        <ul>
+          <li>英文化</li>
+        </ul>
+
+      </section>
+
+
+{% endblock %}

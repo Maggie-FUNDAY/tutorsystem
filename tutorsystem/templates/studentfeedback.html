@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+  <title>Tutor System - Student Feedback</title>
+
+{% endblock %}
+
+
+{% block main %}
+
+      <div class="pagetitle">
+        <h1>Student Feedback</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li class="breadcrumb-item">FUNDAY Teachers</li>
+            <li class="breadcrumb-item active">Student Feedback</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
+
+      <section>
+
+        <div class="card col-12">
+          <div class="card-body">
+
+            <!-- Class Filter -->
+            <form class="row g-3 pt-3">
+              <div class="col-6 col-md-3 col-xl-2">
+                <label for="inputStartDate" class="form-label">Start Date</label>
+                <input id="inputStartDate" type="date" class="form-control">
+              </div>
+              <div class="col-6 col-md-3 col-xl-2">
+                <label for="inputEndDate" class="form-label">End Date</label>
+                <input id="inputEndDate" type="date" class="form-control">
+              </div>
+              <div class="col-6 col-md-3 col-xl-2">
+                <label for="inputFilter" class="form-label">Score</label>
+                <select id="inputFilter" class="form-select">
+                  <option></option>
+                  <option>2</option>
+                  <option>4</option>
+                  <option>6</option>
+                  <option>8</option>
+                  <option>10</option>
+                </select>
+              </div>
+              <div class="col-6 col-sm-3 col-md-1 mt-5">
+                <button type="submit" class="btn btn-primary">Search</button>
+              </div>
+            </form><!-- End Filter -->
+
+          </div>
+        </div>
+
+
+        <div class="col-12">
+          
+          <div class="card">
+            <div class="card-body">
+
+              <!-- Class List Table -->
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Class ID</th>
+                    <th scope="col">Level</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Student</th>
+                    <th scope="col">Attitude</th>
+                    <th scope="col">Difficulty</th>
+                    <th scope="col">Professionalism</th>
+                    <th scope="col">Interactivity</th>
+                    <th scope="col">Rating</th>
+                    <th scope="col">Comment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>2023/03/01<br>14:00-14:50</td>
+                    <td>E23000000</td>
+                    <td>A2</td>
+                    <td>FA</td>
+                    <td>Class 1</td>
+                    <td>CJ<br>0900000000<br>411 / 369230<br>B1-1</td>
+                    <td>Passionate<br>Rigorous<br>Differentiated teaching<br>Scattered and impolite<br>Perfunctory</td>
+                    <td>Too easy<br>Slightly easy<br>Moderate<br>Slightly difficult<br>Too difficult</td>
+                    <td>Very incompetent<br>Incompetent<br>Adequate<br>Competent<br>Very competent</td>
+                    <td>Very insufficient<br>Insufficient<br>Adequate<br>Sufficient<br>Very sufficient</td>
+                    <td><span class="badge bg-warning m-1">6</span></td>
+                    <td>Velit asperiores et ducimus soluta repudiandae labore officia est ut</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- End Class List Table -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+{% endblock %}
